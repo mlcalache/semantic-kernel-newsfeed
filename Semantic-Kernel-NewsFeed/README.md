@@ -59,6 +59,10 @@ Located in NewsPlugin.cs, this kernel function fetches headlines from BBC by cat
 
 The LLM will automatically call get_news and return a list of headlines.
 
+## Demo
+
+There is a little demo video available at [YouTube](https://youtu.be/BXkMXEoLJuI).
+
 ## Running the App
 
 ```bash

@@ -35,6 +35,7 @@ var chatMessages = new ChatHistory();
 
 while (true)
 {
+    Console.ForegroundColor = ConsoleColor.White;
     Console.Write("Prompt: ");
     chatMessages.AddUserMessage(Console.ReadLine());
 
@@ -48,6 +49,7 @@ while (true)
 
     var fullMessage = "";
 
+    Console.ForegroundColor = ConsoleColor.Magenta;
     await foreach (var content in completion)
     {
         Console.Write(content.Content);
