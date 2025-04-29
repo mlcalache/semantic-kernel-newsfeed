@@ -35,6 +35,20 @@ var chatMessages = new ChatHistory();
 
 while (true)
 {
+
+    Console.ForegroundColor = ConsoleColor.DarkYellow;
+    Console.WriteLine("Some available categories are: ");
+    Console.WriteLine("Top Stories");
+    Console.WriteLine("World");
+    Console.WriteLine("UK");
+    Console.WriteLine("Business");
+    Console.WriteLine("Politics");
+    Console.WriteLine("Health");
+    Console.WriteLine("Education & Family");
+    Console.WriteLine("Science & Environment");
+    Console.WriteLine("Technology");
+    Console.WriteLine("Entertainment & Arts");
+
     Console.ForegroundColor = ConsoleColor.White;
     Console.Write("Prompt: ");
     chatMessages.AddUserMessage(Console.ReadLine());
@@ -58,4 +72,4 @@ while (true)
 
     chatMessages.AddAssistantMessage(fullMessage);
     Console.WriteLine();
-} 
+}
