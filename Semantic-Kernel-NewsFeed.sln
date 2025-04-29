@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semantic-Kernel-Demo", "Semantic-Kernel-Demo\Semantic-Kernel-Demo.csproj", "{899363AA-3571-49EB-A0D0-77E3236123C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semantic-Kernel-NewsFeed", "Semantic-Kernel-NewsFeed\Semantic-Kernel-NewsFeed.csproj", "{899363AA-3571-49EB-A0D0-77E3236123C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
