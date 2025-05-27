@@ -1,10 +1,11 @@
-// https://feeds.bbci.co.uk/news/rss.xml
-
 using Microsoft.SemanticKernel;
 using SimpleFeedReader;
 using System.ComponentModel;
 
-public class NewsPlugin
+/// <summary>
+/// Fetches data from https://feeds.bbci.co.uk/news/rss.xml
+/// </summary>
+public class BBCNewsPlugin
 {
     [KernelFunction("get_news")] // recommendation to use snake case
     [Description("Get news items for today's date.")]

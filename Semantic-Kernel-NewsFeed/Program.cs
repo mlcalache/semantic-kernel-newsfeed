@@ -1,9 +1,7 @@
 ﻿using Microsoft.SemanticKernel;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
-using System.IO.Compression;
 
 // Load configuration from secrets
 var configuration = new ConfigurationBuilder()
@@ -17,15 +15,9 @@ string? apiKey = configuration["SemanticKernel:ApiKey"];
 
 var builder = Kernel.CreateBuilder();
 
-// Services
-
 builder.AddAzureOpenAIChatCompletion(modelId, endpoint, apiKey);
 
-// Plugins
-
-builder.Plugins.AddFromType<NewsPlugin>();
-
-
+builder.Plugins.AddFromType<BBCNewsPlugin>();
 
 var kernel = builder.Build();
 
